@@ -2,7 +2,7 @@ services:
   - type: web
     name: blog-platform
     runtime: static
-    buildCommand: npm ci && npm run build
+    buildCommand: npm ci --prefix frontend && npm run build --prefix frontend
     staticPublishPath: frontend/dist
     routes:
       - type: rewrite
