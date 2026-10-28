@@ -23,6 +23,10 @@ Build a production bundle with `npm run build`; preview it with `npm run preview
 
 The workflow builds the app with the repository-specific base path and publishes `frontend/dist`. It also includes a 404 fallback for direct links to posts. For a `username.github.io` repository, the workflow uses the root path automatically.
 
+## Deploy to Render
+
+The root `render.yaml` configures a static site using the root npm lockfile and publishes `frontend/dist`. In Render, choose **New → Blueprint** and connect this repository. The rewrite rule serves the React app for direct post links. No environment variables or backend service are needed.
+
 ## Deploy
 
 This is a static single-page app. The repository includes Vercel and Netlify configuration for the build output and client-side routes. Import the repository in either provider and deploy from the workspace root; the settings use `npm install`, `npm run build`, and `frontend/dist`. No environment variables or database service are required. The same build can be hosted on any static host that serves `frontend/dist` and rewrites unknown paths to `index.html`.
