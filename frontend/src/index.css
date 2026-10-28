@@ -1,0 +1,32 @@
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #1d2925;
+  background: #fff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  --ink: #1d2925;
+  --muted: #78827d;
+  --line: #e7eae6;
+  --paper: #fff;
+  --wash: #f5f7f3;
+  --moss: #456351;
+  --moss-dark: #294435;
+  --lime: #d3e2aa;
+  --serif: 'Newsreader', Georgia, serif;
+  --sans: 'DM Sans', sans-serif;
+  --content-width: 1136px;
+}
+
+* { box-sizing: border-box; }
+html { min-width: 320px; scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+button, input, textarea { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { color: inherit; }
+a { color: inherit; text-decoration: none; }
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid #718a65; outline-offset: 3px; }
+::selection { color: var(--ink); background: var(--lime); }
